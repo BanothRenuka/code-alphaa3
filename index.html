@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Home Lighting Automation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Home Lighting Automation System</h1>
+<p class="subtitle">
+    Automated lighting using motion & light sensors
+</p>
+
+<div class="flowchart">
+
+    <div class="box start">Start</div>
+
+    <div class="arrow">↓</div>
+
+    <div class="box">Detect Motion?</div>
+
+    <div class="arrow">↓</div>
+
+    <div class="decision">
+        <div class="yes">YES</div>
+        <div class="no">NO</div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="box">Check Light Intensity</div>
+            <div class="arrow">↓</div>
+            <div class="box">Turn Light ON</div>
+        </div>
+
+        <div class="column">
+            <div class="box">Keep Light OFF</div>
+        </div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="box">Wait for Timeout</div>
+
+    <div class="arrow">↓</div>
+
+    <div class="box end">Turn Light OFF</div>
+
+</div>
+
+<button onclick="highlightFlow()">Simulate Automation</button>
+
+<script src="script.js"></script>
+</body>
+</html>
